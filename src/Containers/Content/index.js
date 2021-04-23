@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import { onDrop, onDragOver, onDragEnter, onDragLeave } from '../../Utils';
+import { onDrop, onDragOverTarget, onDragEnter, onDragLeave } from '../../Utils';
 
 const ContentWrapper = (props) => {
     const [htmlContent, setContent] = useState(null);
@@ -26,7 +26,7 @@ const ContentWrapper = (props) => {
             className="content-wrapper"
             dangerouslySetInnerHTML={{ __html: htmlContent }}
             onDrop={onDrop}
-            onDragOver={onDragOver}
+            onDragOver={onDragOverTarget}
             onDragEnter={onDragEnter}
             onDragLeave={onDragLeave}
         >

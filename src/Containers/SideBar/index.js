@@ -13,10 +13,11 @@ const Sider = () => {
                 <TabPane tab="SETTINGS" key="1">
                     <div className="section-items-wrapper">
                         <div
+                            id="drag-image"
                             className="section-item"
                             draggable
                             onDragStart={onDragStart}
-                            onDragOver={onDragOver}
+                            // onDragOver={onDragOver}
                         >
                             <div className="section-icon">
                                 <PictureFilled />
@@ -24,10 +25,11 @@ const Sider = () => {
                             Image
                         </div>
                         <div
+                            id="drag-text"
                             className="section-item"
                             draggable
                             onDragStart={onDragStart}
-                            onDragOver={onDragOver}
+                            // onDragOver={onDragOver}
                         >
                             <div className="section-icon">
                                 <FontSizeOutlined />

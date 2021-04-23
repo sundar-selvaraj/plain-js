@@ -1,2 +1,2 @@
-export { default as Sidebar } from './SideBar';
-export { default as ContentWrapper } from './Content';
+export { default as Image } from './Elements/Image';
+export { default as Text } from './Elements/Text';

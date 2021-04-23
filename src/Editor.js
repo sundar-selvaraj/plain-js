@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 
-import { Sidebar, ContentWrapper } from './Components';
+import { Sidebar, ContentWrapper } from './Containers';
 
 const Editor = () => {
     return (
