@@ -14,13 +14,14 @@ code {
 .sider-wrapper {
   background-color: #ffffff;
   border-right: 1px solid #f4f4f4;
-  height: 100vh;
+  height: 100%;
   padding: 1rem;
+  /* width: 25rem; */
 }
 
 .content-wrapper {
   /* border: 1px solid #f4f4f4; */
-  height: 100%;
+  /* height: 100%; */
   background-color: #f4f4f4;
   display: flex;
   justify-content: center;
@@ -61,4 +62,27 @@ code {
 .image-content-wrapper .image-content {
   color: #bdbdbd;
   font-size: 100px;
+}
+#root {
+  height: 100%;
+}
+.h-100 {
+  height: 100%;
+}
+.template-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.template-img-wrapper {
+  margin: 1rem;
+  border: 1px solid #000000;
+}
+.template-img {
+  height: 10rem;
+  width: 8rem;
+}
+.target-container {
+  min-height: 80vh;
+  padding-bottom: 2rem;
 }

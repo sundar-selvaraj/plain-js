@@ -16,8 +16,8 @@ const BuildComponents = () => {
                 <div className="section-icon">
                     <PictureFilled />
                 </div>
-                            Image
-                        </div>
+                Image
+            </div>
             <div
                 id="drag-text"
                 className="section-item"
@@ -28,8 +28,8 @@ const BuildComponents = () => {
                 <div className="section-icon">
                     <FontSizeOutlined />
                 </div>
-                            Heading
-                        </div>
+                Heading
+            </div>
         </div>
     )
 }

@@ -2,7 +2,7 @@ import Editor from './Editor';
 
 const App = () => {
   return (
-    <div>
+    <div className="h-100">
       <Editor />
     </div>
   );
