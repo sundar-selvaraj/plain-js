@@ -4,6 +4,8 @@ import _uniqueId from 'lodash/uniqueId';
 import _includes from 'lodash/includes';
 
 import { Image, Text } from '../Components';
+import Button from '../Components/Elements/Button';
+import Video from '../Components/Elements/Video';
 
 export const getRelatedElement = (elementID) => {
     switch (elementID) {
@@ -11,6 +13,12 @@ export const getRelatedElement = (elementID) => {
             return <Image />;
         case "drag-text":
             return <Text text="sample" />;
+        case "drag-heading":
+            return <Text text="sample" fontSize={32} />;
+        case "drag-button":
+            return <Button text="sample" />
+        case "drag-video":
+            return <Video/>
         default:
             return null;
     };

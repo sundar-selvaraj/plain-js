@@ -14,7 +14,7 @@ code {
 .sider-wrapper {
   background-color: #ffffff;
   border-right: 1px solid #f4f4f4;
-  height: 100%;
+  /* height: 100%; */
   padding: 1rem;
   /* width: 25rem; */
 }
@@ -33,24 +33,25 @@ code {
   flex-wrap: wrap;
 }
 
-.section-items-wrapper .section-item {
-    border: 1.5px solid #bdbdbd;
-    border-radius: 3px;
-    background-color: #f3f3f3;
-    cursor: grab;
-    margin: 0.25rem;
-    padding: 0.25rem;
-    height: 6rem;
-    width: 6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.section-item {
+  border: 1.5px solid #dcd6d6;
+  border-radius: 3px;
+  background-color: #fbfbfb;
+  cursor: grab;
+  margin: 0.15rem;
+  padding: 0.25rem;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.section-items-wrapper .section-item .section-icon {
-  font-size: 3rem;
+.section-item .section-icon {
+  font-size: 1.5rem;
 }
+
 .image-content-wrapper {
   background-color: #e7f2fb;
   display: flex;
@@ -85,4 +86,13 @@ code {
 .target-container {
   min-height: 80vh;
   padding-bottom: 2rem;
+}
+.f-11 {
+  font-size: 11px;
+}
+.w-85 {
+  width: 85% !important
+}
+.search-box {
+  width: 400px;
 }
