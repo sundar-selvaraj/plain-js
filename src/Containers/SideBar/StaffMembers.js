@@ -14,7 +14,6 @@ export default function StaffMembers() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <PictureFilled />
@@ -28,7 +27,6 @@ export default function StaffMembers() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <FontSizeOutlined />
@@ -42,7 +40,6 @@ export default function StaffMembers() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <MobileOutlined />
@@ -50,15 +47,12 @@ export default function StaffMembers() {
 									Mobile
 							</div>
         </Col>
-      </Row>
-      <Row >
         <Col>
           <div
             id="drag-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <MailFilled />
@@ -72,7 +66,6 @@ export default function StaffMembers() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <ShareAltOutlined />
@@ -86,7 +79,6 @@ export default function StaffMembers() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <BorderOutlined />

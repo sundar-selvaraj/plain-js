@@ -14,7 +14,6 @@ export default function Listings() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <PictureFilled />
@@ -28,7 +27,6 @@ export default function Listings() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <PlayCircleOutlined />
@@ -42,7 +40,6 @@ export default function Listings() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <HomeFilled />
@@ -50,15 +47,12 @@ export default function Listings() {
 									Features
 							</div>
         </Col>
-      </Row>
-      <Row>
         <Col>
           <div
             id="drag-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <DollarCircleOutlined />
@@ -72,7 +66,6 @@ export default function Listings() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <HeatMapOutlined />
@@ -86,7 +79,6 @@ export default function Listings() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <FontSizeOutlined />
@@ -94,15 +86,12 @@ export default function Listings() {
 									Heading
 							</div>
         </Col>
-      </Row>
-      <Row>
         <Col>
           <div
             id="drag-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <AlignLeftOutlined />
@@ -116,7 +105,6 @@ export default function Listings() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
             <CalendarOutlined />
@@ -130,7 +118,6 @@ export default function Listings() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
             <BorderlessTableOutlined />
@@ -138,15 +125,12 @@ export default function Listings() {
             <span className='f-11'>Auction Locations</span>
           </div>
         </Col>
-      </Row>
-      <Row>
         <Col>
           <div
             id="drag-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <WalletOutlined />
@@ -160,15 +144,12 @@ export default function Listings() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <BorderOutlined />
             </div>
             <span className='f-11'>View Property Button</span>
           </div>
-        </Col>
-        <Col>
         </Col>
       </Row>
     </>

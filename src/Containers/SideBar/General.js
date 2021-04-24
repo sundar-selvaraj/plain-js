@@ -50,8 +50,6 @@ export default function General() {
 									Heading
 							</div>
         </Col>
-      </Row>
-      <Row >
         <Col>
           <div
             id="drag-text"

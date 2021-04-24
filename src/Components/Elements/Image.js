@@ -1,18 +1,18 @@
 import React from 'react';
 import { PictureFilled } from '@ant-design/icons';
 
-import { onDragOverTarget } from '../../Utils';
+import Wrapper from './Wrapper';
 
 const Image = ({ url }) => {
     return (
-        <div className="node-content" onDragOver={onDragOverTarget}>
+        <Wrapper>
             {url
                 ? <img src={url} alt="wrapper" />
                 : <div className="image-content-wrapper node-content">
                     <PictureFilled className="image-content" />
                 </div>
             }
-        </div>
+        </Wrapper>
     );
 }
 

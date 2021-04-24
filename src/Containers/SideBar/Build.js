@@ -13,7 +13,7 @@ const { Panel } = Collapse;
 const BuildComponents = () => {
 	return (
 		<Col>
-			<Row className='search-box'>
+			<Row className='search-box sider-section-wrapper'>
 				<Col span={16} offset={1}>
 					<Input.Search
 						placeholder="input search text"
@@ -21,7 +21,12 @@ const BuildComponents = () => {
 				</Col>
 			</Row>
 			<Col>
-				<Collapse defaultActiveKey={['1', '2', '3', '4', '5', '6']} ghost expandIconPosition={'right'}>
+				<Collapse
+					className="sider-section-wrapper"
+					defaultActiveKey={['1', '2', '3', '4', '5', '6']}
+					ghost
+					expandIconPosition={'right'}
+				>
 					<Panel className='w-85' header="General" key="1">
 						<General />
 					</Panel>

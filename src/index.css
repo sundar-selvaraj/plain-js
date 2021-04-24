@@ -14,7 +14,7 @@ code {
 .sider-wrapper {
   background-color: #ffffff;
   border-right: 1px solid #f4f4f4;
-  /* height: 100%; */
+  height: 100%;
   padding: 1rem;
   /* width: 25rem; */
 }
@@ -95,4 +95,33 @@ code {
 }
 .search-box {
   width: 400px;
+}
+.sider-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.node-wrapper {
+  border: 1px solid transparent;
+  position: relative;
+}
+.node-wrapper:hover {
+  border-color: #009400;
+}
+.node-wrapper:hover .node-edit-wrapper{
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 3px;
+}
+.edit-icon-wrapper {
+  background-color: #009400;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 5px;
+  margin: 2px;
+}
+.node-edit-wrapper {
+  display: none;
 }

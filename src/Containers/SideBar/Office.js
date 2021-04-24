@@ -14,13 +14,12 @@ export default function Office() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <FontSizeOutlined />
             </div>
-									Text
-							</div>
+                Text
+            </div>
         </Col>
         <Col>
           <div
@@ -28,7 +27,6 @@ export default function Office() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <MobileOutlined />
@@ -42,7 +40,6 @@ export default function Office() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <MailFilled />
@@ -50,15 +47,12 @@ export default function Office() {
 								Email
 							</div>
         </Col>
-      </Row>
-      <Row >
         <Col>
           <div
             id="drag-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <HeatMapOutlined />
@@ -72,7 +66,6 @@ export default function Office() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <ShareAltOutlined />

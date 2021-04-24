@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Wrapper from './Wrapper';
+
 const defaultProps = {
     padding: ['0', '0', '0', '0'],
     margin: ['10', '10', '10', '10'],
@@ -20,7 +22,7 @@ const Text = (props) => {
         margin
     } = mainProps;
     return (
-        <div className="node-content">
+        <Wrapper>
             <p
                 style={{
                     fontSize,
@@ -32,7 +34,7 @@ const Text = (props) => {
             >
                 {text}
             </p>
-        </div>
+        </Wrapper>
     );
 }
 

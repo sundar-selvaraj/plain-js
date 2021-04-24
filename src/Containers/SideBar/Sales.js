@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Row } from 'antd';
-import { PictureFilled, HomeFilled, PlayCircleOutlined, DollarCircleOutlined, CalendarOutlined, HeatMapOutlined, WalletOutlined, BorderOutlined, FontSizeOutlined } from '@ant-design/icons';
+import { PictureFilled, HomeFilled, PlayCircleOutlined, DollarCircleOutlined, CalendarOutlined, HeatMapOutlined, BorderOutlined, FontSizeOutlined } from '@ant-design/icons';
 
 import { onDragStart } from '../../Utils';
 
@@ -14,7 +14,6 @@ export default function Sales() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <PictureFilled />
@@ -28,7 +27,6 @@ export default function Sales() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <PlayCircleOutlined />
@@ -42,7 +40,6 @@ export default function Sales() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <HomeFilled />
@@ -50,15 +47,12 @@ export default function Sales() {
 									Features
 							</div>
         </Col>
-      </Row>
-      <Row>
         <Col>
           <div
             id="drag-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <DollarCircleOutlined />
@@ -72,7 +66,6 @@ export default function Sales() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <CalendarOutlined />
@@ -86,7 +79,6 @@ export default function Sales() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <HeatMapOutlined />
@@ -94,15 +86,12 @@ export default function Sales() {
 									Address
 							</div>
         </Col>
-      </Row>
-      <Row>
-      <Col>
+        <Col>
           <div
             id="drag-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <FontSizeOutlined />
@@ -116,21 +105,19 @@ export default function Sales() {
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <DollarCircleOutlined />
             </div>
 								Description
 							</div>
-        </Col>        
+        </Col>
         <Col>
           <div
             id="drag-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
-          // onDragOver={onDragOver}
           >
             <div className="section-icon">
               <BorderOutlined />
