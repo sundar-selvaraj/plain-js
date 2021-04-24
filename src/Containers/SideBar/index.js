@@ -1,9 +1,7 @@
 import React from 'react';
 import { Tabs } from 'antd';
-import { PictureFilled, FontSizeOutlined } from '@ant-design/icons';
 
-import { onDragOver, onDragStart } from '../../Utils';
-
+import BuildComponents from './Build';
 const { TabPane } = Tabs;
 
 const Sider = () => {
@@ -11,35 +9,12 @@ const Sider = () => {
         <div className="sider-wrapper">
             <Tabs centered>
                 <TabPane tab="SETTINGS" key="1">
-                    <div className="section-items-wrapper">
-                        <div
-                            id="drag-image"
-                            className="section-item"
-                            draggable
-                            onDragStart={onDragStart}
-                            // onDragOver={onDragOver}
-                        >
-                            <div className="section-icon">
-                                <PictureFilled />
-                            </div>
-                            Image
-                        </div>
-                        <div
-                            id="drag-text"
-                            className="section-item"
-                            draggable
-                            onDragStart={onDragStart}
-                            // onDragOver={onDragOver}
-                        >
-                            <div className="section-icon">
-                                <FontSizeOutlined />
-                            </div>
-                            Heading
-                        </div>
-                    </div>
                 </TabPane>
-                <TabPane tab="LAYOUT" key="2"></TabPane>
-                <TabPane tab="BUILD" key="3"></TabPane>
+                <TabPane tab="LAYOUT" key="2">
+                </TabPane>
+                <TabPane tab="BUILD" key="3">
+                    <BuildComponents />
+                </TabPane>
             </Tabs>
         </div>
     )
