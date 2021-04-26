@@ -10,7 +10,7 @@ export default function General() {
       <Row >
         <Col>
           <div
-            id="drag-image"
+            id="general-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -24,7 +24,7 @@ export default function General() {
         </Col>
         <Col>
           <div
-            id="drag-video"
+            id="general-video"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -38,7 +38,7 @@ export default function General() {
         </Col>
         <Col>
           <div
-            id="drag-heading"
+            id="general-heading"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -52,7 +52,7 @@ export default function General() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="general-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -66,7 +66,7 @@ export default function General() {
         </Col>
         <Col>
           <div
-            id="drag-button"
+            id="general-button"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -80,7 +80,7 @@ export default function General() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="general-spacer"
             className="section-item"
             draggable
             onDragStart={onDragStart}

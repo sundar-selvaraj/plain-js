@@ -7,17 +7,33 @@ import { Image, Text } from '../Components';
 import Button from '../Components/Elements/Button';
 import Video from '../Components/Elements/Video';
 
+export const getSectionId = (nodeId = '') => {
+    const section = nodeId.split('-')
+        ? nodeId.split('-')[0]
+        : '';
+    return section ? `${section}-section-wrapper` : '';
+};
+
 export const getRelatedElement = (elementID) => {
     switch (elementID) {
-        case "drag-image":
+        case "general-image":
+        case "listing-image":
+        case "rental-image":
+        case "sales-image":
             return <Image />;
-        case "drag-text":
-            return <Text />;
-        case "drag-heading":
+        case "general-text":
+            return <Text text="sample" />;
+        case "general-heading":
+        case "listing-heading":
+        case "rental-heading":
+        case "sales-heading":
             return <Text text="sample" fontSize={32} />;
-        case "drag-button":
-            return <Button />
-        case "drag-video":
+        case "general-button":
+            return <Button text="sample" />
+        case "general-video":
+        case "listing-video":
+        case "rental-video":
+        case "sales-video":
             return <Video />
         default:
             return null;
@@ -49,9 +65,25 @@ export const onDragLeave = (event) => {
     event.target.style.boxShadow = "none";
 };
 
-const handleDelete = (event, element) => {
-    event.target.removeChild(element)
-}
+// const handleDelete = (event, element) => {
+//     event.target.removeChild(element)
+// }
+
+export const appendNode = (target, elementID) => {
+    const element = getRelatedElement(elementID);
+    if (element) {
+        var div = document.createElement('div');
+        div.id = _uniqueId('node_');
+        div.draggable = true;
+        div.innerHTML = ReactDOMServer.renderToString(element);
+        div.ondragstart = onDragStart;
+        div.ondragover = onDragOver;
+        // div.firstChild.firstChild.childNodes[0].onclick= () => handleEdit(event, div)
+        // div.firstChild.firstChild.childNodes[1].onclick= () => handleCopy(event, div)
+        // div.firstChild.firstChild.childNodes[2].onclick= () => handleDelete(event, div)
+        target.appendChild(div);
+    }
+};
 
 export const onDrop = (event) => {
     event.preventDefault();
@@ -64,18 +96,19 @@ export const onDrop = (event) => {
                 event.target.appendChild(element);
             }
         } else {
-            const element = getRelatedElement(elementID);
-            if (element) {
-                var div = document.createElement('div');
-                div.id = _uniqueId('node_');
-                div.draggable = true;
-                div.innerHTML = ReactDOMServer.renderToString(element);
-                div.ondragstart = onDragStart;
-                div.ondragover = onDragOver;
-                // div.firstChild.firstChild.childNodes[0].onclick= () => handleEdit(event, div)
-                // div.firstChild.firstChild.childNodes[1].onclick= () => handleCopy(event, div)
-                div.firstChild.firstChild.childNodes[2].onclick= () => handleDelete(event, div)
-                event.target.appendChild(div);
+            const currentSectionId = getSectionId(elementID);
+            const currentSectionElement = document.getElementById(currentSectionId);
+            if (currentSectionId && currentSectionElement) {
+                appendNode(currentSectionElement, elementID);
+            } else {
+                const sectionParent = document.createElement('div');
+                sectionParent.id = currentSectionId;
+                sectionParent.draggable = true;
+                // sectionParent.innerHTML = ReactDOMServer.renderToString(element);
+                sectionParent.ondragstart = onDragStart;
+                sectionParent.ondragover = onDragOver;
+                appendNode(sectionParent, elementID);
+                event.target.appendChild(sectionParent);
             }
         }
     }

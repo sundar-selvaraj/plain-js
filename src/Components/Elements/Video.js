@@ -17,8 +17,8 @@ export default function Video(props) {
   };
 
   const {
-    padding,
-    margin,
+    // padding,
+    // margin,
     src
   } = mainProps;
 

@@ -10,7 +10,7 @@ export default function Office() {
       <Row >
         <Col>
           <div
-            id="drag-text"
+            id="office-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -23,7 +23,7 @@ export default function Office() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="office-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -36,7 +36,7 @@ export default function Office() {
         </Col>
         <Col>
           <div
-            id="drag-image"
+            id="office-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -49,7 +49,7 @@ export default function Office() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="office-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -62,7 +62,7 @@ export default function Office() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="office-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}

@@ -10,7 +10,7 @@ export default function Listings() {
       <Row>
         <Col>
           <div
-            id="drag-image"
+            id="listing-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -23,7 +23,7 @@ export default function Listings() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="listing-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -36,7 +36,7 @@ export default function Listings() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="listing-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -49,7 +49,7 @@ export default function Listings() {
         </Col>
         <Col>
           <div
-            id="drag-image"
+            id="listing-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -62,7 +62,7 @@ export default function Listings() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="listing-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -75,7 +75,7 @@ export default function Listings() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="listing-heading"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -88,7 +88,7 @@ export default function Listings() {
         </Col>
         <Col>
           <div
-            id="drag-image"
+            id="listing-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -101,7 +101,7 @@ export default function Listings() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="listing-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -114,7 +114,7 @@ export default function Listings() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="listing-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -127,7 +127,7 @@ export default function Listings() {
         </Col>
         <Col>
           <div
-            id="drag-image"
+            id="listing-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -140,7 +140,7 @@ export default function Listings() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="listing-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}

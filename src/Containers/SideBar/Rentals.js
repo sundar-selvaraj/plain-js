@@ -10,7 +10,7 @@ export default function Rentals() {
       <Row>
         <Col>
           <div
-            id="drag-image"
+            id="rental-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -23,7 +23,7 @@ export default function Rentals() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="rental-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -36,7 +36,7 @@ export default function Rentals() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="rental-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -49,7 +49,7 @@ export default function Rentals() {
         </Col>
         <Col>
           <div
-            id="drag-image"
+            id="rental-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -62,7 +62,7 @@ export default function Rentals() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="rental-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -75,7 +75,7 @@ export default function Rentals() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="rental-heading"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -88,7 +88,7 @@ export default function Rentals() {
         </Col>
         <Col>
           <div
-            id="drag-image"
+            id="rental-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -101,7 +101,7 @@ export default function Rentals() {
         </Col>
         <Col>
           <div
-            id="drag-image"
+            id="rental-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -114,7 +114,7 @@ export default function Rentals() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="rental-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}

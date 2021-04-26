@@ -10,7 +10,7 @@ export default function Sales() {
       <Row>
         <Col>
           <div
-            id="drag-image"
+            id="sales-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -23,7 +23,7 @@ export default function Sales() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="sales-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -36,7 +36,7 @@ export default function Sales() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="sales-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -49,7 +49,7 @@ export default function Sales() {
         </Col>
         <Col>
           <div
-            id="drag-image"
+            id="sales-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -62,7 +62,7 @@ export default function Sales() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="sales-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -75,7 +75,7 @@ export default function Sales() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="sales-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -88,7 +88,7 @@ export default function Sales() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="sales-heading"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -101,7 +101,7 @@ export default function Sales() {
         </Col>
         <Col>
           <div
-            id="drag-image"
+            id="sales-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -114,7 +114,7 @@ export default function Sales() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="sales-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}

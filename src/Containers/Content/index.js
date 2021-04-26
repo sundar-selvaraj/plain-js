@@ -15,7 +15,6 @@ const ContentWrapper = ({ currentTemplate }) => {
             onDragEnter={onDragEnter}
             onDragLeave={onDragLeave}
         >
-
         </div>
     )
 }

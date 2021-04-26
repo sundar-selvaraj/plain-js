@@ -10,7 +10,7 @@ export default function StaffMembers() {
       <Row >
         <Col>
           <div
-            id="drag-image"
+            id="staff-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -23,7 +23,7 @@ export default function StaffMembers() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="staff-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -36,7 +36,7 @@ export default function StaffMembers() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="staff-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -49,7 +49,7 @@ export default function StaffMembers() {
         </Col>
         <Col>
           <div
-            id="drag-image"
+            id="staff-image"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -62,7 +62,7 @@ export default function StaffMembers() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="staff-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
@@ -75,7 +75,7 @@ export default function StaffMembers() {
         </Col>
         <Col>
           <div
-            id="drag-text"
+            id="staff-text"
             className="section-item"
             draggable
             onDragStart={onDragStart}
