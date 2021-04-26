@@ -12,13 +12,13 @@ export const getRelatedElement = (elementID) => {
         case "drag-image":
             return <Image />;
         case "drag-text":
-            return <Text text="sample" />;
+            return <Text />;
         case "drag-heading":
             return <Text text="sample" fontSize={32} />;
         case "drag-button":
-            return <Button text="sample" />
+            return <Button />
         case "drag-video":
-            return <Video/>
+            return <Video />
         default:
             return null;
     };
@@ -49,6 +49,10 @@ export const onDragLeave = (event) => {
     event.target.style.boxShadow = "none";
 };
 
+const handleDelete = (event, element) => {
+    event.target.removeChild(element)
+}
+
 export const onDrop = (event) => {
     event.preventDefault();
     const elementID = event.dataTransfer.getData("drag-element");
@@ -68,6 +72,9 @@ export const onDrop = (event) => {
                 div.innerHTML = ReactDOMServer.renderToString(element);
                 div.ondragstart = onDragStart;
                 div.ondragover = onDragOver;
+                // div.firstChild.firstChild.childNodes[0].onclick= () => handleEdit(event, div)
+                // div.firstChild.firstChild.childNodes[1].onclick= () => handleCopy(event, div)
+                div.firstChild.firstChild.childNodes[2].onclick= () => handleDelete(event, div)
                 event.target.appendChild(div);
             }
         }

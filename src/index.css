@@ -53,15 +53,16 @@ code {
 }
 
 .image-content-wrapper {
-  background-color: #e7f2fb;
+  background-color: #C1DAE6;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px;
-  height: 300px;
+  height: 230px;
+  width: 600px;
 }
 .image-content-wrapper .image-content {
-  color: #bdbdbd;
+  color: #ffffff;
   font-size: 100px;
 }
 #root {

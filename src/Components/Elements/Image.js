@@ -9,7 +9,7 @@ const Image = ({ url }) => {
             {url
                 ? <img src={url} alt="wrapper" />
                 : <div className="image-content-wrapper node-content">
-                    <PictureFilled className="image-content" />
+                    <PictureFilled className="image-content node-content" />
                 </div>
             }
         </Wrapper>
