@@ -80,10 +80,6 @@ const template = `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	  margin: 0;
 	  padding: 0;
 	  }
-    .target-container {
-      min-height: 80vh;
-      padding-bottom: 2rem;
-    }
 
       @media only screen and (max-width: 600px) {
 

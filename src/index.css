@@ -61,7 +61,6 @@ code {
   justify-content: center;
   margin: 10px;
   height: 230px;
-  width: 600px;
 }
 .image-content-wrapper .image-content {
   color: #ffffff;
@@ -81,13 +80,17 @@ code {
 .template-img-wrapper {
   margin: 1rem;
   border: 1px solid #000000;
+  box-shadow: none;
+}
+.template-selected {
+  box-shadow: 5px 5px 4px #827f7f;
 }
 .template-img {
   height: 10rem;
   width: 8rem;
 }
 .target-container {
-  min-height: 80vh;
+  min-height: 85vh;
   padding-bottom: 2rem;
 }
 .f-11 {

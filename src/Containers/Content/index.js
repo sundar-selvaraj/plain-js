@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { TEMPLATES } from '../../Config/Constant';
-import { onDrop, onDragOverTarget, onDragEnter, onDragLeave } from '../../Utils';
+import { onDrop, onDragOverTarget, onDragEnter } from '../../Utils';
 
 const ContentWrapper = ({ currentTemplate }) => {
     const content = TEMPLATES[currentTemplate];
@@ -13,7 +13,6 @@ const ContentWrapper = ({ currentTemplate }) => {
             onDrop={onDrop}
             onDragOver={onDragOverTarget}
             onDragEnter={onDragEnter}
-            onDragLeave={onDragLeave}
         >
         </div>
     )

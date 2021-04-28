@@ -7,7 +7,15 @@ const Layout = ({ currentTemplate, setTemplate }) => {
             {Object.keys(TEMPLATES).map((key, index) => {
                 let template = TEMPLATES[key];
                 return (
-                    <div key={index} className="template-img-wrapper" onClick={() => setTemplate(key)}>
+                    <div
+                        key={index}
+                        className={
+                            currentTemplate === key
+                                ? "template-img-wrapper template-selected"
+                                : "template-img-wrapper"
+                        }
+                        onClick={() => setTemplate(key)}
+                    >
                         <img className="template-img" src={template.img} alt={key} />
                     </div>
                 )
