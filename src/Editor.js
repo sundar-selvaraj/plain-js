@@ -1,25 +1,29 @@
-import React, { useState } from 'react';
-import { Row, Col } from 'antd';
+import React, { useRef, useState } from 'react';
+import { Layout } from 'antd';
+import { TopBar, Sidebar, ContentWrapper } from './Containers';
 
-import { Sidebar, ContentWrapper } from './Containers';
+const { Header, Sider, Content } = Layout;
+
 
 const Editor = () => {
+    const ref = useRef(null);
     const [currentTemplate, setTemplate] = useState('template_1');
     const handleTemplate = (key) => {
         setTemplate(key);
     };
-    return (
-        <div className="h-100">
-            <Row className="h-100">
-                <Col span={6}>
-                    <Sidebar currentTemplate={currentTemplate} setTemplate={handleTemplate} />
-                </Col>
-                <Col span={18}>
-                    <ContentWrapper currentTemplate={currentTemplate} />
-                </Col>
-            </Row>
-        </div>
-    )
+    return <Layout>
+        <Header>
+            <TopBar ref={ref} />
+        </Header>
+        <Layout>
+            <Sider width={350}>
+                <Sidebar currentTemplate={currentTemplate} setTemplate={handleTemplate} />
+            </Sider>
+            <Content>
+                <ContentWrapper currentTemplate={currentTemplate} ref={ref} />
+            </Content>
+        </Layout>
+    </Layout>
 }
 
 export default Editor;

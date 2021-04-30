@@ -69,7 +69,16 @@ export const onDragLeave = (event) => {
 //     event.target.removeChild(element)
 // }
 
-export const appendNode = (target, elementID) => {
+const handleEdit = (elementID, element, cb) => {
+    let data = {
+        selectedItemId: elementID,
+        showEditSection: true,
+        targetStyle: element.firstChild.style
+    }
+    cb(data)
+}
+
+export const appendNode = (target, elementID, cb) => {
     const element = getRelatedElement(elementID);
     if (element) {
         var div = document.createElement('div');
@@ -78,14 +87,14 @@ export const appendNode = (target, elementID) => {
         div.innerHTML = ReactDOMServer.renderToString(element);
         div.ondragstart = onDragStart;
         div.ondragover = onDragOver;
-        // div.firstChild.firstChild.childNodes[0].onclick= () => handleEdit(event, div)
+        div.firstChild.firstChild.childNodes[0].onclick = () => handleEdit(elementID, div, cb)
         // div.firstChild.firstChild.childNodes[1].onclick= () => handleCopy(event, div)
         // div.firstChild.firstChild.childNodes[2].onclick= () => handleDelete(event, div)
         target.appendChild(div);
     }
 };
 
-export const onDrop = (event) => {
+export const onDrop = (event, cb) => {
     event.preventDefault();
     const elementID = event.dataTransfer.getData("drag-element");
     event.target.style.boxShadow = "none";
@@ -99,7 +108,7 @@ export const onDrop = (event) => {
             const currentSectionId = getSectionId(elementID);
             const currentSectionElement = document.getElementById(currentSectionId);
             if (currentSectionId && currentSectionElement) {
-                appendNode(currentSectionElement, elementID);
+                appendNode(currentSectionElement, elementID, cb);
             } else {
                 const sectionParent = document.createElement('div');
                 sectionParent.id = currentSectionId;
@@ -107,7 +116,7 @@ export const onDrop = (event) => {
                 // sectionParent.innerHTML = ReactDOMServer.renderToString(element);
                 sectionParent.ondragstart = onDragStart;
                 sectionParent.ondragover = onDragOver;
-                appendNode(sectionParent, elementID);
+                appendNode(sectionParent, elementID, cb);
                 event.target.appendChild(sectionParent);
             }
         }
