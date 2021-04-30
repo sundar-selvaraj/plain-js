@@ -13,10 +13,10 @@ const { Panel } = Collapse;
 const BuildComponents = () => {
 	return (
 		<Col>
-			<Row className='search-box sider-section-wrapper'>
-				<Col span={16} offset={1}>
-					<Input.Search
-						placeholder="input search text"
+			<Row className='search-box'>
+				<Col span={20} offset={1}>
+					<Input
+						placeholder="Search Blocks"
 					/>
 				</Col>
 			</Row>

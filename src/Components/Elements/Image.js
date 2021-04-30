@@ -8,12 +8,19 @@ const Image = ({ url }) => {
         <Wrapper>
             {url
                 ? <img src={url} alt="wrapper" />
-                : <div className="image-content-wrapper node-content">
-                    <PictureFilled className="image-content node-content" />
+                : <div style={{
+                    backgroundColor: '#C1DAE6',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '10px',
+                    height: '230px',
+                    // width: '600px'
+                }} className="node-content">
+                    <PictureFilled style={{ color: '#ffffff', fontSize: '100px' }} className="node-content" />
                 </div>
             }
         </Wrapper>
     );
 }
-
 export default Image;

@@ -134,7 +134,16 @@ export const onDropContent = (event) => {
     }
 };
 
-export const appendNode = (target, elementID) => {
+const handleEdit = (elementID, element, cb) => {
+    let data = {
+        selectedItemId: elementID,
+        showEditSection: true,
+        targetStyle: element.firstChild.style
+    }
+    cb(data)
+}
+
+export const appendNode = (target, elementID, cb) => {
     const element = getRelatedElement(elementID);
     const section = getSection(elementID);
     if (element) {
@@ -146,13 +155,14 @@ export const appendNode = (target, elementID) => {
         div.ondragover = onDragOver;
         div.ondrop = onDropContent;
         // div.firstChild.firstChild.childNodes[0].onclick= () => handleEdit(event, div)
+        div.firstChild.firstChild.childNodes[0].onclick = () => handleEdit(elementID, div, cb)
         // div.firstChild.firstChild.childNodes[1].onclick= () => handleCopy(event, div)
         // div.firstChild.firstChild.childNodes[2].onclick= () => handleDelete(event, div)
         target.appendChild(div);
     }
 };
 
-export const onDrop = (event) => {
+export const onDrop = (event, cb) => {
     event.preventDefault();
     const elementID = event.dataTransfer.getData("drag-element");
     event.target.style.boxShadow = "none";
@@ -169,6 +179,7 @@ export const onDrop = (event) => {
                 // event.target.parentNode.contains(currentSectionElement);
                 currentSectionElement.style.boxShadow = 'none';
                 // appendNode(currentSectionElement, elementID);
+                // appendNode(currentSectionElement, elementID, cb);
             } else {
                 const sectionParent = document.createElement('div');
                 sectionParent.id = currentSectionId;
@@ -179,7 +190,7 @@ export const onDrop = (event) => {
                 sectionParent.ondragover = onDragOver;
                 sectionParent.ondragenter = onSectionEnter;
                 sectionParent.ondragleave = onDragLeave;
-                appendNode(sectionParent, elementID);
+                appendNode(sectionParent, elementID, cb);
                 event.target.appendChild(sectionParent);
             }
         }
