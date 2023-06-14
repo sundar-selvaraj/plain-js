@@ -1,0 +1,21 @@
+app:
+  title: Central Station
+  baseUrl: http://localhost:3000
+  support:
+    url: https://github.ford.com/Quartermaster/dcs-backstage/issues # Used by common ErrorPage
+    items: # Used by common SupportButton component
+    - title: Issues
+      icon: github
+      links:
+      - url: https://github.ford.com/Quartermaster/dcs-backstage/issues
+        title: GitHub Issues
+    - title: Webex Teams
+      icon: chat
+      links:
+      - url: https://www.webexteams.ford.com/space?r=fz8y
+        title: '/dev/central/station'
+    - title: Slack
+      icon: chat
+      links:
+      - url: https://ford-eeit-cc.slack.com/archives/C9L83E6DQ
+        title: '#dev-central-station'
